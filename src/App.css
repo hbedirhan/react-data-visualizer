@@ -5,7 +5,7 @@ body {
 }
 
 #root {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -31,9 +31,19 @@ h1 {
   box-sizing: border-box;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 
 .alert-input {
-  width: 100%;
+  width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -42,8 +52,13 @@ h1 {
   box-sizing: border-box;
 }
 
+.alert-input:focus {
+  border: 2px solid #FF6384;
+  outline: none;
+}
+
 button {
-  background-color: #553C9A;
+  background-color: #6a4bbf;
   border: none;
   border-radius: 4px;
   color: white;
@@ -69,6 +84,18 @@ button:hover {
   float: left;
   line-height: 20px;
   cursor: pointer;
+}
+
+.start {
+  margin: 8px 0.5% 8px 24.5%;
+  background-color: #23de9d;
+  width: 25%;
+}
+
+.stop {
+  margin: 8px 24.5% 8px 0.5%;
+  background-color: #e34363;
+  width: 25%;
 }
 
 .container {

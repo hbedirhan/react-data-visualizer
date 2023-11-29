@@ -9,7 +9,7 @@ const DataGenerator = ({ setData, running, interval, numberRange, setLabels }) =
       const intervalId = setInterval(() => {
         const newData1 = generateRandomNumber();
         const newData2 = generateRandomNumber();
-        
+
         setLabels((prevLabels) => [...prevLabels, (prevLabels.length + 1).toString()]);
 
         setData((prevData) => {

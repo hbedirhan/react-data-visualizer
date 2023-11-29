@@ -4,8 +4,8 @@ function Button({ startGeneratingData, stopGeneratingData}) {
 
   return (
     <>
-      <button onClick={startGeneratingData}>Start</button>
-      <button onClick={stopGeneratingData}>Stop</button>
+      <button className='btn start' onClick={startGeneratingData}>Start</button>
+      <button className='btn stop' onClick={stopGeneratingData}>Stop</button>
     </>
   )
 }

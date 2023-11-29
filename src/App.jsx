@@ -16,17 +16,26 @@ function App() {
   const [numberRange, setNumberRange] = useState(10);
   const [labels, setLabels] = useState([]);
 
-  const startGeneratingData = () => setRunning(true);
+  const startGeneratingData = () => {
+    if (interval >= 1 && numberRange >= 1) {
+      setRunning(true)
+    }
+  };
   const stopGeneratingData = () => setRunning(false);
 
   return (
     <>
-      <Button
-        startGeneratingData={startGeneratingData}
+      <SaveButton
+        data={data}
+        labels={labels}
+        setData={setData}
+        setLabels={setLabels}
         stopGeneratingData={stopGeneratingData} />
       <Input
         setInterval={setInterval}
-        setNumberRange={setNumberRange} />
+        interval={interval}
+        setNumberRange={setNumberRange}
+        numberRange={numberRange} />
       <DataGenerator
         setData={setData}
         running={running}
@@ -37,11 +46,8 @@ function App() {
       <BarChart
         datasets={data}
         labels={labels} />
-      <SaveButton
-        data={data}
-        labels={labels}
-        setData={setData}
-        setLabels={setLabels}
+      <Button
+        startGeneratingData={startGeneratingData}
         stopGeneratingData={stopGeneratingData} />
     </>
   );
