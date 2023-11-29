@@ -72,11 +72,35 @@ button:hover {
 }
 
 .container {
-  width: 1000px;
-  max-width: 2000px;
-  overflow-x: scroll;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .containerBody {
   height: 500px;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
 }

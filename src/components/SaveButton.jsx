@@ -8,8 +8,11 @@ function SaveButton({ setData, data, labels, setLabels, stopGeneratingData }) {
         stopGeneratingData();
     };
     const loadData = () => {
-        setData(JSON.parse(localStorage.getItem('data')));
-        setLabels(JSON.parse(localStorage.getItem('labels')));
+        setData(JSON.parse(localStorage.getItem('data')) || {
+            dataSet1: [],
+            dataSet2: [],
+          });
+        setLabels(JSON.parse(localStorage.getItem('labels')) || []);
     };
 
     return (
