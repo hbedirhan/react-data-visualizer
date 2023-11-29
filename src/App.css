@@ -22,7 +22,7 @@ h1 {
 }
 
 .input {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -41,9 +41,24 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.input-group {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.inputs {
+ display: flex;
+ width: 50%;
+ flex-direction: column;
+}
+
+.alert {
+  color: #f0224e;
+}
 
 .alert-input {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;

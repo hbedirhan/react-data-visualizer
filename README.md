@@ -1,8 +1,14 @@
-# React + Vite
+# React Data Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Visualize Random Data App! This application showcases the visualization of randomly generated data using cutting-edge technologies.
 
-Currently, two official plugins are available:
+## How to Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the project on your local machine, run the lines in the bash below:
+
+   ```bash
+   git clone https://github.com/hbedirhan/react-data-visualizer
+   cd react-data-visualizer
+   npm install
+   npm run dev
+
